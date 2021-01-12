@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Covid Indonesia</string>
+    <string name="show_global_cases">Show Global Cases</string>
+    <string name="global_cases">Global Cases</string>
+    <string name="open_in_google_maps">Open In Google Berita</string>
+    <string name="covid_indonesia">Covid Indonesia</string>
+    <string name="deaths">Deaths</string>
+    <string name="people">People</string>
+    <string name="active">Active</string>
+    <string name="recovered">Recovered</string>
+    <string name="positive">Positive</string>
+    <string name="coronavirus_prevention">Coronavirus Prevention</string>
+    <string name="avoid">Avoid</string>
+    <string name="keep_clean">Keep Clean</string>
+    <string name="symptoms_naware">Symptoms \nAware</string>
+    <string name="disinfectant">Disinfectant</string>
+    <string name="if_any_symptoms_appear">if any symptoms appear</string>
+    <string name="total_positive">Total Positive</string>
+    <string name="total_recovered">Total Recovered</string>
+    <string name="total_death">Total Death</string>
+    <string name="apps_version">Demo V.20.1</string>
+</resources>

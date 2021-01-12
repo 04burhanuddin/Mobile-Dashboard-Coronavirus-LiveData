@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.IndonesiaDataActivity">
+
+    <!-- NestedScrollView -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <!-- ConstraintLayout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Toolbar Costum  -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/Tollbar_GlobalData"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- End Toolbar Costum  -->
+
+            <!-- Background Costum  -->
+            <ImageView
+                android:id="@+id/BackgroundLinearRed"
+                android:layout_width="575dp"
+                android:layout_height="603dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Tollbar_GlobalData"
+                app:srcCompat="@drawable/ic_background_red" />
+            <!-- End Background Costum  -->
+
+            <!-- Data Covid Indo  -->
+            <ImageView
+                android:id="@+id/show_update"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/Tollbar_GlobalData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.615"
+                app:srcCompat="@drawable/ic_public_white" />
+
+            <ImageView
+                android:id="@+id/coronavirus"
+                android:layout_width="189dp"
+                android:layout_height="172dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_covid_red" />
+
+            <TextView
+                android:id="@+id/data_indonesia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/covid_indonesia"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/BackgroundLinearRed" />
+            <!-- End Data Covid Indo  -->
+
+            <!-- CardView Data Positif  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Pembungkus_Card"
+                android:layout_width="356dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/data_indonesia">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- CardView Data Meninggal  -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Card_Meninggal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/Card_Sembuh"
+                        app:layout_constraintStart_toStartOf="@+id/Card_Sembuh"
+                        app:layout_constraintTop_toBottomOf="@+id/Card_Sembuh">
+
+                        <!-- ConstraintLayout -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/dt_meninggal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/deaths"
+                                android:textColor="#F3B600"
+                                android:textSize="20sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/ds_meninggal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#F3B600"
+                                android:textSize="30sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/dt_meninggal"
+                                tools:text="View" />
+
+                            <TextView
+                                android:id="@+id/org_meninggal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="24dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/people"
+                                android:textColor="#9F9999"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/ds_meninggal" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <!-- End ConstraintLayout -->
+
+                    </androidx.cardview.widget.CardView>
+                    <!-- End CardView Data Meninggal  -->
+
+                    <!-- CardView Data Dirawat  -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Card_Dirawat"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/Card_Positif"
+                        app:layout_constraintStart_toStartOf="@+id/Card_Positif"
+                        app:layout_constraintTop_toBottomOf="@+id/Card_Positif">
+
+                        <!-- ConstraintLayout -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/dt_dirawat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/active"
+                                android:textColor="#3F51B5"
+                                android:textSize="20sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/ds_dirawat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#3F51B5"
+                                android:textSize="30sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/dt_dirawat"
+                                tools:text="View" />
+
+                            <TextView
+                                android:id="@+id/org_dirawat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="24dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/people"
+                                android:textColor="#9F9999"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/ds_dirawat" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <!-- End ConstraintLayout -->
+
+                    </androidx.cardview.widget.CardView>
+                    <!-- End CardView Data Dirawat  -->
+
+                    <!-- CardView Data Sembuh  -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Card_Sembuh"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/Card_Positif"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- ConstraintLayout  -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/dt_sembuh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/recovered"
+                                android:textAlignment="viewStart"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#4CAF50"
+                                android:textSize="20sp"
+                                android:typeface="normal"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/ds_sembuh"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#4CAF50"
+                                android:textSize="30sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/dt_sembuh"
+                                tools:text="View" />
+
+                            <TextView
+                                android:id="@+id/org_sembuh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="24dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/people"
+                                android:textColor="#9F9999"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/ds_sembuh" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <!-- End ConstraintLayout  -->
+
+                    </androidx.cardview.widget.CardView>
+                    <!-- End CardView Data Sembuh  -->
+
+                    <!-- CardView Data Positif  -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Card_Positif"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintEnd_toStartOf="@+id/Card_Sembuh"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- ConstraintLayout  -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/dt_positif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/positive"
+                                android:textColor="#F13C3C"
+                                android:textSize="20sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/ds_positif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#F13C3C"
+                                android:textSize="30sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/dt_positif"
+                                tools:text="View" />
+
+                            <TextView
+                                android:id="@+id/org_positif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="24dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/people"
+                                android:textColor="#9F9999"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/ds_positif" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <!-- End ConstraintLayout  -->
+
+                    </androidx.cardview.widget.CardView>
+                    <!-- End CardView Data Positif  -->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!-- End ConstraintLayout  -->
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- TextView and ImageView Pencegahan -->
+            <TextView
+                android:id="@+id/pencegahan"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/coronavirus_prevention"
+                android:textColor="#434343"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Pembungkus_Card" />
+
+            <ImageView
+                android:id="@+id/use_mask"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/use_soap"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BackgroundLinearRed"
+                app:layout_constraintTop_toBottomOf="@+id/pencegahan"
+                app:srcCompat="@drawable/ic_avoid" />
+
+            <TextView
+                android:id="@+id/txt_mask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/avoid"
+                android:textColor="#706C6C"
+                app:layout_constraintEnd_toEndOf="@+id/use_mask"
+                app:layout_constraintStart_toStartOf="@+id/use_mask"
+                app:layout_constraintTop_toBottomOf="@+id/use_mask" />
+
+            <ImageView
+                android:id="@+id/use_soap"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/gejala_batuk"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/use_mask"
+                app:layout_constraintTop_toBottomOf="@+id/pencegahan"
+                app:srcCompat="@drawable/ic_keep_clean" />
+
+            <TextView
+                android:id="@+id/use_shoap_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/keep_clean"
+                android:textColor="#706C6C"
+                app:layout_constraintEnd_toEndOf="@+id/use_soap"
+                app:layout_constraintStart_toStartOf="@+id/use_soap"
+                app:layout_constraintTop_toBottomOf="@+id/use_soap" />
+
+            <ImageView
+                android:id="@+id/gejala_batuk"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/disinfektan"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/use_soap"
+                app:layout_constraintTop_toBottomOf="@+id/pencegahan"
+                app:srcCompat="@drawable/ic_symptoms" />
+
+            <TextView
+                android:id="@+id/batuk_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/symptoms_naware"
+                android:textColor="#706C6C"
+                app:layout_constraintEnd_toEndOf="@+id/gejala_batuk"
+                app:layout_constraintStart_toStartOf="@+id/gejala_batuk"
+                app:layout_constraintTop_toBottomOf="@+id/gejala_batuk" />
+
+            <ImageView
+                android:id="@+id/disinfektan"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/BackgroundLinearRed"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/gejala_batuk"
+                app:layout_constraintTop_toBottomOf="@+id/pencegahan"
+                app:srcCompat="@drawable/ic_disinfectan" />
+
+            <TextView
+                android:id="@+id/disinfektan_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/disinfectant"
+                android:textColor="#706C6C"
+                app:layout_constraintEnd_toEndOf="@+id/disinfektan"
+                app:layout_constraintStart_toStartOf="@+id/disinfektan"
+                app:layout_constraintTop_toBottomOf="@+id/disinfektan" />
+            <!-- End TextView and ImageView Pencegahan -->
+
+            <!-- CardView Card_Konsultasi -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card_Konsultasi"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/batuk_day">
+
+                <!-- ConstraintLayout -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/doctor"
+                        android:layout_width="161dp"
+                        android:layout_height="142dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="2dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_doctor" />
+
+                    <TextView
+                        android:id="@+id/more_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Dial 119 For\nMedical Help!"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toEndOf="@+id/doctor"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/covid"
+                        android:layout_width="34dp"
+                        android:layout_height="33dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_covid_19" />
+
+                    <TextView
+                        android:id="@+id/massage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="18dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/if_any_symptoms_appear"
+                        android:textColor="#706C6C"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/doctor" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!-- End ConstraintLayout -->
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- End CardView Card_Konsultasi -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- End ConstraintLayout -->
+
+    </androidx.core.widget.NestedScrollView>
+    <!-- End NestedScrollView -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

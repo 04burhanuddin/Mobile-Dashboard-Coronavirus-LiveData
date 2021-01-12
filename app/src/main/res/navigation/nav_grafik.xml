@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grafik"
+    app:startDestination="@id/indonesiaDataActivity">
+
+    <activity
+        android:id="@+id/splashScreenActivity"
+        android:name="com.tugasakhirsemester.burhanuddin.activity.SplashScreenActivity"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenActivity_to_indonesiaDataActivity"
+            app:destination="@id/indonesiaDataActivity" />
+    </activity>
+    <activity
+        android:id="@+id/globalDataActivity"
+        android:name="com.tugasakhirsemester.burhanuddin.activity.GlobalDataActivity"
+        android:label="Data Indonesia"
+        tools:layout="@layout/activity_global_data" >
+        <action
+            android:id="@+id/action_globalDataActivity_to_indonesiaDataActivity"
+            app:destination="@id/indonesiaDataActivity" />
+    </activity>
+    <activity
+        android:id="@+id/indonesiaDataActivity"
+        android:name="com.tugasakhirsemester.burhanuddin.activity.IndonesiaDataActivity"
+        android:label="Global Data"
+        tools:layout="@layout/activity_indonesia_data" >
+        <action
+            android:id="@+id/action_indonesiaDataActivity_to_globalDataActivity"
+            app:destination="@id/globalDataActivity" />
+    </activity>
+</navigation>
