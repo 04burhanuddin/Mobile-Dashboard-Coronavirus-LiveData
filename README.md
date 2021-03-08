@@ -6,9 +6,7 @@ Project Tugas Akhir UAS Pemrograman Berbasis Mobile <b>STMIK Akakom Yogyakarta</
 saat project ini dibuat
 - Dengen menggunakan `Kotlin Version 1.4.21-release-Studio4.1-1` <b>Kotlin Syintetic Deprecated</b>
 - Pengembangan aplikasi `git clone https://github.com/04burhanuddin/Mobile-Dashboard-Coronavirus-LiveData.git`
-- Sebelunya aplikasi dapat di coba terlebih dahulu yang sudah di build yang saya simpan di directory utama dengan nama aplikasi 
-<b>Covid Indonesia.apk</b>
-- Pembahasan singkat terdapat pada komentar source code program &#9997;
+- Aplikasi dapat di install sudah di sediakn build apk di folder utama .apk
 - Biasakan <b>Memahami</b> terlebih dahulu sebelum copy paste biar tidak terjadi error &#x1F602;
 
 ## API SPECI
@@ -69,7 +67,7 @@ Pada bagian <b>Response</b> dimana saya tidak memasukkan `"name : "` Untuk setia
 menampilkan name ke response tidak akan sesuai dikarenakan isi dari response name adalah menggunakan <b><i>Bhs. Indonesia</i></b>
 
 ## Tampilan Aplikasi
-Aplikasi ini saya uji coba pada `Device` saya dengan ukuran layar `<b>6.3 inch, 1440 x 3040 dengan android 10</b>` dan ini kemungkina akan berbeda ketika di jalankan 
+Aplikasi ini saya uji coba pada `Device` saya dengan ukuran layar `6.3 inch, 1440 x 3040 dengan android 10` dan ini kemungkina akan berbeda ketika di jalankan 
 pada device yang lebih kecil dari device yang saya gunakan akan tetapi pada aplikasi ini sudha mendukung `ScrollView` &#128076; jadi jika di jalankan pada device yang lebih kecil
 informasi yang ada pada aplikasi akan tetap tampil tanpa terpotong. 
 - SplashScreen dan Dashboard
