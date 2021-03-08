@@ -1,4 +1,5 @@
 ## Mobile Dashboard Coronavirus Live Data
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)<br>
 Project Tugas Akhir UAS Pemrograman Berbasis Mobile <b>STMIK Akakom Yogyakarta</b>
 ## Penting &#10071;
 - Sumber API dari https://kawalcorona.com/api/
