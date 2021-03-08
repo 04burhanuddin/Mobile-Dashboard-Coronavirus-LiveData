@@ -74,18 +74,18 @@ pada device yang lebih kecil dari device yang saya gunakan akan tetapi pada apli
 informasi yang ada pada aplikasi akan tetap tampil tanpa terpotong. 
 - SplashScreen dan Dashboard
 
-  <img src="AppSplashScreen.jpg" width="300px"> <img src="AppDashboard.jpg" width="300px">
+  <img src="OutputScreen/AppSplashScreen.jpg" width="300px"> <img src="OutputScreen/AppDashboard.jpg" width="300px">
   
 - Popup Menu dan GlobalCases
 
-  <img src="AppMenuPopup.jpg" width="300px"> <img src="AppGlobalCases.jpg" width="300px">
+  <img src="OutputScreen/AppMenuPopup.jpg" width="300px"> <img src="OutputScreen/AppGlobalCases.jpg" width="300px">
 
   
 
 ## Navigation
 Berikut adalah nav grafikdari aplikasi ini
 
-<img src="AppNavGrafik.jpg" width="700px">
+<img src="OutputScreen/AppNavGrafik.jpg" width="700px">
 
 Dari Navigasi di atas dapat di lihat bahwa aplikasi ini hanya memiliki <b>3 Activity<b>
 

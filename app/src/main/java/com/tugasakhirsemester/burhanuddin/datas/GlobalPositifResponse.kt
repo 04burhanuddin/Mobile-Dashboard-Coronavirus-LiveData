@@ -1,12 +1,6 @@
-package com.tugasakhirsemester.burhanuddin.model
+package com.tugasakhirsemester.burhanuddin.datas
 
 data class GlobalPositifResponse(
-    /*
-     * Untuk neme val di bawah ini di sesuaikan dengan nama-nama
-     * variabel yang telah di deklarasikan pada Api pada
-     * https://api.kawalcorona.com/positif serta
-     * tpe data di tentukan tipe datanya String
-     */
     val name: String,
     val value: String
 )
