@@ -7,7 +7,6 @@ Project Tugas Akhir UAS Pemrograman Berbasis Mobile <b>STMIK Akakom Yogyakarta</
 saat project ini dibuat
 - Dengen menggunakan `Kotlin Version 1.4.21-release-Studio4.1-1` <b>Kotlin Syintetic Deprecated</b>
 - Pengembangan aplikasi `git clone https://github.com/04burhanuddin/Mobile-Dashboard-Coronavirus-LiveData.git`
-- Aplikasi dapat di install sudah di sediakn build apk di folder utama .apk
 - Biasakan <b>Memahami</b> terlebih dahulu sebelum copy paste biar tidak terjadi error &#x1F602;
 
 ## API SPECI
@@ -64,8 +63,6 @@ saat project ini dibuat
     "value": "13,049"
   }
   ```
-Pada bagian <b>Response</b> dimana saya tidak memasukkan `"name : "` Untuk setiap <i>Response</i> dikarenakan aplikasi yang dibuat berbahasa inggris sedangkan jika kita ingin
-menampilkan name ke response tidak akan sesuai dikarenakan isi dari response name adalah menggunakan <b><i>Bhs. Indonesia</i></b>
 
 ## Tampilan Aplikasi
 Aplikasi ini saya uji coba pada `Device` saya dengan ukuran layar `6.3 inch, 1440 x 3040 dengan android 10` dan ini kemungkina akan berbeda ketika di jalankan 
