@@ -1,7 +1,6 @@
 ## Mobile Dashboard Coronavirus Live Data
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)<br>
-- Project Tugas Akhir UAS Pemrograman Berbasis Mobile <b>STMIK Akakom Yogyakarta</b>
-- UI NOT RESPONSIVE !!! Tidak di semua Ukuran layar HP Responsive masih perlu perbaikan...
+
 ## Penting &#10071;
 - Sumber API dari https://kawalcorona.com/api/
 - Project ini dibuat dengan menggunakan android `Android Studio 4.1.1 Build #AI-201.8743.12.41.6953283, built on November 5, 2020` Versi terbaru
@@ -85,5 +84,3 @@ Berikut adalah nav grafikdari aplikasi ini
 <img src="OutputScreen/AppNavGrafik.jpg" width="700px">
 
 Dari Navigasi di atas dapat di lihat bahwa aplikasi ini hanya memiliki <b>3 Activity<b>
-
-# Keep On Coding Off Sosmed&#128245; Mode On&#128187;
